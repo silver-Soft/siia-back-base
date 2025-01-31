@@ -4,7 +4,6 @@ import java.io.Serializable;
 
 import org.springframework.beans.BeanUtils;
 
-import mx.uatx.siiaback.serviciosEscolares.entities.SePaProgramaCampusLic;
 import mx.uatx.siiaback.serviciosEscolares.entities.SePaProgramaEducativo;
 
 public class ProgramaEducativoTO implements Serializable {
@@ -54,13 +53,7 @@ public class ProgramaEducativoTO implements Serializable {
 		strPrograma = programa.getId().getStrPrograma();
 	}
 
-	public ProgramaEducativoTO(final SePaProgramaCampusLic programa) {
-		super();
-		BeanUtils.copyProperties(programa, this);
-		intIdPrograma = programa.getIntIdProgramaCampus();
-		strPrograma = programa.getStrDsProgramaEducativo();
-		strDsProgramaCampus = programa.getStrDsProgramaCampus();
-	}
+	
 
 	public Integer getIntIdPrograma() {
 		return intIdPrograma;

@@ -227,11 +227,9 @@
 					</execution>
 				</executions>
 				<configuration>
-					<wsdlUrls>
-						<wsdlUrl>https://met.sep.gob.mx/met-ws/services/TitulosElectronicos.wsdl</wsdlUrl>
-					</wsdlUrls>
+			
 					<wsdlDirectory>${project.basedir}/src/main/resources/</wsdlDirectory>
-					<packageName>mx.uatx.siiaback.serviciosEscolares.titulacion.titulosDigitales.wsdl</packageName>
+					<packageName> </packageName>
 					<sourceDestDir>
 						${project.build.directory}/generated-sources/xjc1
 					</sourceDestDir>
